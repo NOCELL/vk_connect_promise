@@ -1,0 +1,37 @@
+{
+  "name": "vk_connect_promise",
+  "version": "1.0.0",
+  "description": "Promise API wrapper for VK Connect ( VK Apps )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NOCELL/vk_connect_promise.git"
+  },
+  "keywords": [
+    "vk",
+    "api",
+    "js"
+  ],
+  "author": "Oleg Zuev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NOCELL/vk_connect_promise/issues"
+  },
+  "homepage": "https://github.com/NOCELL/vk_connect_promise#readme",
+  "dependencies": {
+    "@vkontakte/vkui-connect": "^1.1.3"
+  },
+  "prettier": {
+    "useTabs": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": false,
+    "parser": "flow",
+    "semi": false
+  }
+}
