@@ -18,15 +18,13 @@ const getToken = (app_id, scope) => {
 
 const call = (method_name, params) => {
 	const promise_name = `method${req_counter++}`
-	debugger
 	connect.send(method_name, {
 		request_id: promise_name,
 		...params,
 	})
-	return new Promise((r, j) => {
+	return new Promise(r => {
 		methods[promise_name] = {
 			r,
-			j,
 		}
 	})
 }
@@ -41,8 +39,10 @@ const api = async (method_name, params) => {
 const resolver = e => {
 	const event = e.detail
 	if (event.data.request_id !== undefined) {
-		methods[event.data.request_id].r(event)
-		methods[event.data.request_id] = undefined
+		if (methods[event.data.request_i] !== undefined) {
+			methods[event.data.request_id].r(event)
+			methods[event.data.request_id] = undefined
+		}
 	}
 }
 
