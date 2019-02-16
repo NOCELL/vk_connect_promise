@@ -50,4 +50,25 @@ const {
 })
 ```
 
+### .updateToken 
 
+Set token for call VK API methods via execute-wrapper
+
+```javascript
+const {
+    data: { access_token },
+} = await connect_promise.getToken(app_id, '')
+connect_promise.updateToken(access_token)
+```
+
+### .execute 
+
+Make VK API request via execute-wrapper
+
+```javascript
+const data = await connect_promise.api('users.get', {
+    user_ids: '1',
+    v: '5.92',
+    access_token: this.state.token,
+})
+```
