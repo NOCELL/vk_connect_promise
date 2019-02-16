@@ -1,13 +1,13 @@
 import connect from '@vkontakte/vkui-connect'
 
-let access_token = null
-let v = '5.92'
-const methods = {}
-let req_counter = 0
+let access_token = null,
+	req_counter = 0,
+	execute_counter = 0
 
-const execute_promise = {}
-const execute_methods = []
-let execute_counter = 0
+const execute_promise = {},
+	execute_methods = [],
+	methods = {},
+	v = '5.92'
 
 const getToken = (app_id, scope) => {
 	if (typeof scope !== 'string') scope = scope.join(',')
