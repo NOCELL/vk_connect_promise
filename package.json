@@ -1,6 +1,6 @@
 {
   "name": "vk_connect_promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise API wrapper for VK Connect ( VK Apps )",
   "main": "index.js",
   "scripts": {

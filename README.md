@@ -2,7 +2,7 @@
 
 Module for working with API callings as Promise 
 
-### Init
+## Init
 
 ```javascript
 
@@ -12,9 +12,11 @@ import connect_promise from 'vk_connect_promise'
 connect.subscribe(connect_promise.resolver)
 ```
 
+## Methods
+
 ### .call
 
-Ccalling VK Connect methods
+Call VK Connect method
 
 ```javascript
 await connect_promise.send("VKWebAppShare", {"link": "https://vk.com/nocell"});
