@@ -66,7 +66,7 @@ connect_promise.updateToken(access_token)
 Make VK API request via execute-wrapper
 
 ```javascript
-const data = await connect_promise.api('users.get', {
+const data = await connect_promise.execute('users.get', {
     user_ids: '1',
     v: '5.92',
     access_token: this.state.token,
