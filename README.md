@@ -19,7 +19,7 @@ connect.subscribe(connect_promise.resolver)
 Call VK Connect method
 
 ```javascript
-await connect_promise.send("VKWebAppShare", {"link": "https://vk.com/nocell"});
+await connect_promise.call("VKWebAppShare", {"link": "https://vk.com/nocell"});
 ```
 
 
